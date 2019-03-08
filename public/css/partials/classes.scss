@@ -1,0 +1,94 @@
+.font-light {
+  font-weight: 300;
+}
+
+.font-reg {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.line-height-0 {
+  line-height: 0px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.x-y-align {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-2 {
+  top: 1.25rem;
+}
+
+.left-2 {
+  left: 1.25rem;
+}
+
+.right-2 {
+  right: 1.25rem;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+
+.wh-50{
+  width:50px;
+  height:50px;
+}
+
+.b-radius-1{
+  border-radius: $border-radius
+}
+
+/*
+Icons sizes
+ */
+
+
+.i-xs {
+  font-size: .75rem;
+}
+
+.i-sm {
+  font-size: .875rem;
+}
+
+.i-md {
+  font-size: 1.2rem;
+}
+
+
+.i-lg {
+  font-size: 1.4rem;
+  line-height: .75rem;
+  vertical-align: -.0667rem;;
+}
+
+.i-2x {
+  font-size: 2rem;
+}
+
+.i-3x {
+  font-size: 3rem;
+}
+
+.i-5x {
+  font-size: 5rem;
+}
+
+.i-7x {
+  font-size: 7rem;
+}
+
+.i-10x {
+  font-size: 10rem;
+}

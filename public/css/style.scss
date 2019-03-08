@@ -1,0 +1,112 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "../libs/bootstrap/scss/bootstrap";
+@import "partials/icons";
+@import "partials/switch";
+@import "partials/animations";
+@import "partials/buttons";
+@import "partials/fonts";
+@import "partials/classes";
+
+body {
+  font-family: $font-main;
+  color: $font-color;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.form-control:focus {
+  border-color: $color-5;
+  box-shadow: none;
+}
+
+#navbar {
+  height: 70px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#app-router-view {
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
+
+;
+.card {
+  img {
+    max-height: 200px;
+  }
+
+  .btn-action {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .badge {
+    font-size: 100%;
+    font-weight: 400;
+  }
+}
+
+.app-alert {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, 0);
+  width: 95%;
+}
+
+// =================================================== //
+// ================== MEDIA QUERIES ================== //
+// =================================================== //
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #navbar {
+    height: 100%;
+    width: 100px;
+    top: 0;
+  }
+  #app-router-view {
+    position: relative;
+    top: 0;
+    right: -100px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: calc(100% - 100px);
+    overflow-y: auto;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

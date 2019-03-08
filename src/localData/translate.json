@@ -1,0 +1,29 @@
+{
+  "he": {
+    "Previous": "הקודם",
+    "Home": "בית",
+    "Login": "התחברות",
+    "Create": "צור קבוצה",
+    "Account": "חשבון",
+    "Registration": "הרשמה",
+    "Logout": "התנתקות",
+    "Email": "אימייל",
+    "Password": "סיסמה",
+    "Wrong password": "סיסמה שגויה",
+    "Email is not valid": "האימייל אינו תקין",
+    "Email my be taken": "האימייל כבר נמצא בשימוש",
+    "Only english letters and numbers" :"מכילה אנגלית ומספרים בלבד",
+    "At least 8 characters" :"לפחות 8 תווים",
+    "Contain 1 capital letter" :"מכילה אות גדולה אחת",
+    "Contain 1 number" :"מכילה ספרה אחת",
+    "User was created": "נרשמת בהצלחה!",
+    "User registration failed": "בעיה ביצירת המשתמש",
+    "Don't worry, we wont send you any spam": "אל דאגה, אנחנו לא נשלח לך דואר זבל",
+    "User login success": "התחברת בהצלחה!",
+    "User login failed": "התחברות נכשלה",
+    "Data is incomplete": "לא ניתן להשלים את הפעולה",
+    "User is already exists": "המשתמש כבר קיים במערכת - עבור להתחברות",
+    "Unable to create user": "לא ניתן ליצור את המשתמש",
+    "Something went wrong": "משהו השתבש"
+  }
+}

@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <alert :msg="msg"></alert>
+        <navbar></navbar>
+        <div id="app-router-view" class="container-fluid p-3">
+            <router-view @alert="alert"></router-view>
+        </div>
+    </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import alert from './components/alert';
+    import navbar from './components/navbar';
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: "app",
+        components: {alert, navbar},
+        data: function () {
+            return {
+                msg: {
+                    type: 'error',
+                    body: [],
+                },
+            }
+        },
+        created() {
+            this.$store.dispatch('tryAutoLogin');
+        },
+        methods: {
+
+            alert(type, msg) {
+                this.msg.type = type ? type : 'error';
+                if (msg) {
+                    this.msg.body.push(msg);
+                } else {
+                    this.msg.body = [];
+                }
+
+                setTimeout(() => {
+                    this.msg.body = [];
+                }, 4000)
+            }
+        }
+    };
+
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
